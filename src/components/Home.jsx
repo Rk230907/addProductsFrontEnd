@@ -84,7 +84,7 @@ const Home = () => {
   // Function to handle adding new product
   const handleAddProduct = async (newProduct) => {
     try {
-      await axios.post("http://localhost:5001/products", newProduct);
+      await axios.post("https://addproducts.onrender.com/products", newProduct);
       fetchTopProducts(); // Refresh the product list
     } catch (error) {
       console.error("Error adding product:", error);
